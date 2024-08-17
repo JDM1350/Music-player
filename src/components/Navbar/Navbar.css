@@ -1,0 +1,152 @@
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  color: #fff;
+  width: 200px; 
+  height: 100vh; 
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+
+.sidebar .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.sidebar .logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+
+.sidebar .tabs {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px; 
+  width: 100%;
+}
+
+
+.sidebar .tab-item {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 20px; 
+  border-radius: 20px;
+  transition: background 0.3s;
+  width: 100%;
+  text-align: center; 
+}
+
+.sidebar .tab-item.active,
+.sidebar .tab-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(36, 35, 35);
+  padding: 10px 20px;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: auto; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  z-index: 1000;
+}
+
+.controls button {
+  background-color: #000000;
+  border: none;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: relative;
+  z-index: 2;
+}
+
+.controls .dropdown-menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #333;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  width: 200px;
+  overflow: hidden;
+}
+
+.controls .dropdown-item {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.controls .dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.navbar .logo img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+@media (max-width: 460px) {
+  .sidebar {
+    display: none; 
+  }
+
+  .navbar {
+    display: flex; 
+  }
+}
+@media (max-width:770px )and(min-width:460px) {
+  .sidebar{
+    display: none;
+  }
+  .navbar{
+    display: none;
+  }
+  
+}
+
+@media (min-width: 461px) {
+  .sidebar {
+    display: flex; 
+  }
+
+  .navbar {
+    display: none; 
+  }
+}

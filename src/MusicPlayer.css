@@ -1,0 +1,16 @@
+.music-player {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Arial, sans-serif';
+  }
+  
+  .main-content {
+    display: flex;
+    flex: 1;
+  }
+
+ 
+  
